@@ -1,0 +1,66 @@
+>      
+> # Title is displayed here.
+> print("Welcome to a Ninja Mission Mad Libs game.\n")
+> story_count = 0
+> 
+> 
+> 
+> 
+> while True:
+>     play = input("\nWould you like to play (y/n)? ")
+>     if play.lower() == "y":
+>         print(f"\nFirst, what is your name? ")
+>         name = input()
+>         print(f"\nHello, {name}! Which story line would you like to play with?")
+>         while True:
+>             choice = input("\nWhat is your choice (a/b)? ")
+>             if choice.lower() == 'a':           # Collecting Parts Mission is Choice 'a'
+>                 print()
+>                 food = input("1) What is a food you like? ")
+>                 number = input("2) Give me a number from 5 to 10? ")
+>                 person = input("3) What is the name of a family member or close friend? ")
+>                 adjective = input("4) Give me an adjective: ")
+>                 verb = input("5) Give me a verb ending in -ing: ")
+>                 animal = input("6) Give me a type of animal: ")
+> 
+>                 # Displays the first story
+>                 print(f"\n{name}, here is your story:\n")
+> 
+>                 print(f'\nYou and ' + person + ' decide to build a ' + adjective + ' launcher.  ' 'You wander '
+>                       f'\naround the base looking for ingredients to build the launcher ' + food +
+>                       '.'
+>                       f'\nEventually, you collect ' + number + ' scrap metal. ' ' You hear a noise. You hide behind a '
+>                       f'\ncorner. All of a sudden you see a large hairy ' + animal + ' walk by.' + person + ' runs up to '
+>                       f'\nyou and asks if you two should engage. You tell them that you would rather be ' + verb + '.')
+>                 story_count += 1
+>                 print()
+>                 choice = input("Continue (y/n)?: ")
+>                 if choice != "y":
+>                     break
+> 
+>           elif choice.lower() == 'b':  # Mountain Hike training is choice 'b'
+>                 print("")
+>                 noun1 = input("1) What is a thing you like to carry when you hike? ")
+>                 noun2 = input("2) Name a mountain peak: ")
+>                 verb1 = input("3) Give me a verb: ")
+>                 adjective1 = input("4) Give me an adjective: ")
+>                 noun3 = input("5) Give me a noun: ")
+>                 verb2 = input("6) Give me a verb ending in -ing: ")
+> 
+>                 # Displays the second story
+>                 print(f"\n{name}, here is your story:\n")
+>                 print(f'\nOn a sunny day, you decided to ' + verb1 + ' You grabbed your ' + noun1 +
+>                       f' \nand went towards, ' + noun2 + ' The journey was ' + adjective1 +
+>                       f'\nOn your way, you found a ' + noun3 + ' which was ' + verb2 + ' It was!')
+>                 story_count += 1
+>                 print()
+>                 choice = input("Continue (y/n)?: ")
+>                 if choice != "y":
+>                     break
+> 
+> 
+>         else:
+>                 print ("\nOk. Come back when you want to play!")
+>         break
+> 
+>     print("No problem! Come back when your ready!")
